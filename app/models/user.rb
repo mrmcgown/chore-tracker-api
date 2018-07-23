@@ -3,5 +3,5 @@
 class User < ApplicationRecord
   include Authentication
   has_many :examples
-  has_many :chores, optional:true
+  has_many :chores
 end
