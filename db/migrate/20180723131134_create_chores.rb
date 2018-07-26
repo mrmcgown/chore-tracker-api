@@ -1,6 +1,7 @@
 class CreateChores < ActiveRecord::Migration[5.1]
   def change
     create_table :chores do |t|
+      t.references :user
       t.string :name
       t.integer :estimated_time
       t.boolean :is_finished
